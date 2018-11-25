@@ -7,8 +7,8 @@ A fairly opinionated template for starting new deep-learning projects quickly an
 TODO: Add proper setup instructions
 
 - Clone this repo
-- source the local env
-- build the image locally
+- chmod +x run.sh
+- chmod +x deploy.sh
 - Set up the VM:
   - https://cloud.google.com/compute/docs/gpus/add-gpus#install-gpu-driver
   - make requisite dirs wherever u want
