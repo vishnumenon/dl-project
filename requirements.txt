@@ -1,0 +1,4 @@
+pandas
+mlflow
+
+# Add other packages that your model requires here:

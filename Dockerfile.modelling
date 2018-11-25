@@ -1,0 +1,18 @@
+FROM nvcr.io/nvidia/pytorch:18.11-py3
+
+WORKDIR /workspace
+RUN rm -rf *
+
+ADD requirements.txt .
+RUN pip install -r requirements.txt
+
+ENV MLFLOW_TRACKING_URI="http://mlflow:5000"
+
+ADD sample_notebooks /workspace/sample_notebooks
+ADD jupyter_notebook_config.py /root/.jupyter/
+
+
+EXPOSE 8888
+CMD jupyter notebook --ip=0.0.0.0 --allow-root
+
+ADD models /workspace/models
