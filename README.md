@@ -2,6 +2,8 @@
 
 A fairly opinionated template for starting new deep-learning projects quickly and iterating efficiently
 
+## Getting Started
+
 TODO: Add proper setup instructions
 
 - Clone this repo
