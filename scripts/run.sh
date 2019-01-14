@@ -1,4 +1,4 @@
 #!/bin/sh
 
-eval $(cat local.env)
+eval $(cat scripts/local.env)
 docker-compose up --build
